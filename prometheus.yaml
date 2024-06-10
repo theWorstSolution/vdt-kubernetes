@@ -7,6 +7,9 @@ spec:
   serviceMonitorSelector:
     matchLabels:
       app: vdt
+  podMonitorSelector:
+    matchLabels:
+      app: vdt
   resources:
     requests:
       memory: 400Mi
