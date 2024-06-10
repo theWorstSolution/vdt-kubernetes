@@ -10,13 +10,13 @@ spec:
   project: default
   sources:
     - repoURL: https://github.com/theWorstSolution/vdt-be-helmChart.git
-      targetRevision: HEAD
+      targetRevision: main
       chart: vdt-be-chart
       helm:
         valueFiles:
           - values.yaml
     # - repoURL: https://github.com/theWorstSolution/vdt-fe-helmChart.git
-    #   targetRevision: HEAD
+    #   targetRevision: main
     #   chart: vdt-fe-chart
     #   helm:
     #     valueFiles:
