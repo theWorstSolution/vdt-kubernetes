@@ -33,15 +33,12 @@ spec:
           readOnly: true
         - name: var-run
           mountPath: /var/run
-          readOnly: true
+          readOnly: false
         - name: sys
           mountPath: /sys
           readOnly: true
-        - name: var-lib-docker
+        - name: docker
           mountPath: /var/lib/docker
-          readOnly: true
-        - name: dev-disk
-          mountPath: /dev/disk
           readOnly: true
       volumes:
       - name: rootfs
@@ -53,9 +50,6 @@ spec:
       - name: sys
         hostPath:
           path: /sys
-      - name: var-lib-docker
+      - name: docker
         hostPath:
           path: /var/lib/docker
-      - name: dev-disk
-        hostPath:
-          path: /dev/disk
