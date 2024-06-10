@@ -8,16 +8,13 @@ spec:
     server: https://kubernetes.default.svc
     namespace: default
   project: default
-  source:
-    repoURL: https://github.com/theWorstSolution/vdt-be-helmChart.git
-    targetRevision: HEAD
-    path: .
-    # - repoURL: https://github.com/theWorstSolution/vdt-fe-helmChart.git
-    #   targetRevision: main
-    #   chart: vdt-fe-chart
-    #   helm:
-    #     valueFiles:
-    #       - values.yaml
+  sources:
+    - repoURL: https://github.com/theWorstSolution/vdt-be-helmChart.git
+      targetRevision: HEAD
+      path: .
+    - repoURL: https://github.com/theWorstSolution/vdt-fe-helmChart.git
+      targetRevision: HEAD
+      path: .
   syncPolicy:
     automated:
       prune: true
