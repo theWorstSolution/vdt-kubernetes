@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: cadvisor
-        image: google/cadvisor:latest
+        image: gcr.io/cadvisor/cadvisor
         resources:
           limits:
             cpu: 100m
