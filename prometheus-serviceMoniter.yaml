@@ -10,3 +10,5 @@ spec:
       app: vdt
   endpoints:
   - port: port
+    path: /metrics
+    interval: 15s
