@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: prometheus-fe-exporter
+  labels:
+        app: vdt
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vdt
+  template:
+    metadata:
+      labels:
+        app: vdt
+    spec:
+      containers:
+      - name: prometheus-exporter
+        image: nginx/nginx-prometheus-exporter:latest
+        args:
+          - -nginx.scrape-uri=http://116.103.226.146:8787/metrics
+        ports:
+        - name: port
+          containerPort: 9113
