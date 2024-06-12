@@ -29,6 +29,7 @@ data:
         Type        _doc
         HTTP_User   elastic
         HTTP_Passwd iRsUoyhqW-CyyGdwk6V_
+        tls         Off
 
   parsers.conf: |
     [PARSER]
