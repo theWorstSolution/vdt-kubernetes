@@ -12,6 +12,7 @@ data:
         Flush        5
         Log_Level    info
         Daemon       off
+        Parsers_File parsers.conf
 
     [INPUT]
         Name        tail
