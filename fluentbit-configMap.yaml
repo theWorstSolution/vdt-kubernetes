@@ -6,6 +6,9 @@ metadata:
 data:
   fluent-bit.conf: |
     [SERVICE]
+        HTTP_Server On
+        HTTP_Listen 0.0.0.0
+        HTTP_Port   2020
         Flush        5
         Log_Level    info
         Daemon       off
@@ -18,7 +21,7 @@ data:
 
     [INPUT]
         Name        tail
-        Path        /var/log/express/requests.log,/var/log/express/error.log,/var/log/express/combined.log
+        Path        /var/log/express/error.log,/var/log/express/combined.log
         Parser      json
         Tag         express.*
 
