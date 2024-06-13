@@ -23,7 +23,7 @@ data:
     [OUTPUT]
         Name        es
         Match       *
-        Host        116.103.226.146
+        Host        https://116.103.226.146
         Port        9200
         Index       thanhnc_0325640405
         Type        _doc
