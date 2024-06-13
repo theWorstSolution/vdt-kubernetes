@@ -8,7 +8,7 @@ spec:
   selector:
     app: vdt
   ports:
-    - name: port
+    - name: port1 # exporter port use http
       protocol: TCP
       port: 9113
       targetPort: 9113

@@ -20,5 +20,5 @@ spec:
         args:
           - -nginx.scrape-uri=https://116.103.226.146:8787/metrics
         ports:
-        - name: port
+        - name: port1
           containerPort: 9113
