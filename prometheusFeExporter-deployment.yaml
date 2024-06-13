@@ -18,7 +18,7 @@ spec:
       - name: prometheus-exporter
         image: nginx/nginx-prometheus-exporter:latest
         args:
-          - -nginx.scrape-uri=http://116.103.226.146:8787/metrics
+          - -nginx.scrape-uri=https://116.103.226.146:8787/metrics
         ports:
         - name: port
           containerPort: 9113
